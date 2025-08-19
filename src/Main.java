@@ -8,10 +8,11 @@ public class Main {
         String addGear = "y";
 
         while (addGear.equals("y")){
-            System.out.println("What Type of Gear do you wish to add?\n" +
-                    "C - Camera\n" +
-                    "Ln - Lens\n" +
-                    "O - Others");
+            System.out.println("""
+                    What Type of Gear do you wish to add?
+                    C - Camera
+                    Ln - Lens
+                    O - Others""");
             String gearType = scanner.nextLine();
             switch (gearType.toLowerCase()){
                 case ("c"):
@@ -81,7 +82,17 @@ public class Main {
             addGear = scanner.nextLine();
         }
 
+        System.out.print("Would you like to check your entiries? (y/n) ");
+        String displayCheck = scanner.nextLine();
+        if (displayCheck.equalsIgnoreCase("y")){
+            SohanGear.displayGearItems();
+        }
 
+        System.out.print("Would you like to check total price? (y/n) ");
+        String displayPrice = scanner.nextLine();
+        if (displayPrice.equalsIgnoreCase("y")){
+            SohanGear.totalGearPrice();
+        }
 /*
         Camera mainCamera = new Camera("Canon R8", 1, 85000);
         Lens mainLens = new Lens("Canon 24-70 f/2.8", 1, 45000);
