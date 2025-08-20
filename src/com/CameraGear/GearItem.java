@@ -1,3 +1,5 @@
+package com.CameraGear;
+
 public class GearItem {
     private String GearName;
     private int GearQuantity;

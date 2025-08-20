@@ -1,4 +1,6 @@
-public class Camera extends GearItem{
+package com.CameraGear;
+
+public class Camera extends GearItem {
     private Integer shutterCount;
 
     public Camera(String GearName, int GearQuantity, int Price, Integer shutterCount ){

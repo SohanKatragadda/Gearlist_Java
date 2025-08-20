@@ -1,3 +1,5 @@
+package com.CameraGear;
+
 import java.util.ArrayList;
 
 public class GearList {

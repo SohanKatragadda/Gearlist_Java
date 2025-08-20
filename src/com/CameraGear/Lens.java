@@ -1,3 +1,5 @@
+package com.CameraGear;
+
 public class Lens extends GearItem{
     private String serviceDate;
 
